@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cadastro</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="screen">
+      <div class="screenleft">
+        <img src="images/financial_data.png" alt="" />
+      </div>
+      <div class="screenright">
+        <h1>Crie uma conta</h1>
+
+        <form method="POST" action="cadastro.php" class="gbvalidator">
+          <label for="">
+            Seu nome:<br />
+            <input
+              class="form-control form-control-lg"
+              type="text"
+              name="name"
+              data-rules="required|min=2"
+            />
+          </label>
+          <label for="">
+            Seu e-mail:<br />
+            <input
+              class="form-control form-control-lg"
+              type="text"
+              name="e-mail"
+              data-rules="required|email"
+            />
+          </label>
+          <label for="">
+            Sua senha:<br />
+            <input
+              class="form-control form-control-lg"
+              type="password"
+              name="password"
+              data-rules="required|min=4"
+            />
+          </label>
+          <label for="">
+            <button class="btn btn-primary w-100">Cadastrar</button>
+          </label>
+        </form>
+
+        <div>Já tem uma conta? <a href="">Faça o Login</a></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
